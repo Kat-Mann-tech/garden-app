@@ -1,11 +1,11 @@
-// Hardcoded values for the season and plant type
+// Collect user input for season and plant type
 let season = prompt("Enter a season (summer or winter):"); // TODO: Replace with prompt() to allow user interaction.
 let plantType = prompt("Enter a plant type (flower or vegetable):"); // TODO: Replace with prompt() to allow user interaction.
 
-// Variable to hold gardening advice
+// Variable to hold gardening advice that will be generated based on user input
 let advice = "";
 
-// Determine advice based on the season
+// Determine advice based on the season entered by the user
 if (season === "summer") {
     advice += "Water your plants regularly and provide some shade.\n";
 } else if (season === "winter") {
@@ -14,7 +14,7 @@ if (season === "summer") {
     advice += "No advice for this season.\n";
 }
 
-// Determine advice based on the plant type
+// Determine advice based on the plant type entered by the user
 if (plantType === "flower") {
     advice += "Use fertiliser to encourage blooms.";
 } else if (plantType === "vegetable") {
